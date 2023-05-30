@@ -1,4 +1,4 @@
-module hikaruimasaka/utils
+module github.com/hikaruimasaka/utils
 
 go 1.13
 
