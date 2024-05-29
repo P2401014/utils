@@ -26,7 +26,7 @@ var (
 
 const (
 	// MaxPoolSize 连接池大小
-	MaxPoolSize uint64 = 1000
+	MaxPoolSize uint64 = 2000
 )
 
 // StartMongodb 启动mongodb的连接
