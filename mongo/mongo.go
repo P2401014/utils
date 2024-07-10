@@ -41,7 +41,7 @@ func StartMongodb(env config.DB) {
 	option.SetHosts(hosts)                   // 设置连接host
 	option.SetReplicaSet(env.ReplicaSetName) // 设置replica name
 	option.SetMaxPoolSize(MaxPoolSize)       // 设置最大连接池的数量
-	option.SetMinPoolSize(100)               // 设定最小连接池大小
+	option.SetMinPoolSize(0)               // 设定最小连接池大小
 	option.SetRetryReads(true)               // 增加读的重试
 	option.SetRetryWrites(true)              // 增加写的重试
 	// 设置读的偏好
