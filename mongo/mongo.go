@@ -45,7 +45,7 @@ func StartMongodb(env config.DB) {
 	option.SetRetryReads(true)               // 增加读的重试
 	option.SetRetryWrites(true)              // 增加写的重试
 	// 设置读的偏好
-	r := readpref.SecondaryPreferred()
+	r := readpref.Primary()
 	option.SetReadPreference(r)
 	// 设置读隔离
 	rn := readconcern.Local()
